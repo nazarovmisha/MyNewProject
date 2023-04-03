@@ -12,7 +12,7 @@ public class Some {
         Class map = Class.forName("java.util.Map");
 
 
-        //Получаем модификаторы для HashMap
+        //Получаем модификаторы для  HashMap
         int hashMapModifiers = hashMap.getModifiers();
 
         //Получаем модификаторы для AbstractMap
