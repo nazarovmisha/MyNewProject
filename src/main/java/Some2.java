@@ -1,10 +1,12 @@
 import java.lang.reflect.Modifier;
 
+import static java.lang.Class.*;
+
 public class Some2 {
     public static void main(String[] args) throws ClassNotFoundException {
-        Class arrayList = Class.forName("java.util.ArrayList");
-        Class abstractList = Class.forName("java.util.AbstractList");
-        Class collection = Class.forName("java.util.Collection");
+        Class arrayList = forName("java.util.ArrayList");
+        Class abstractList = forName("java.util.AbstractList");
+        Class collection = forName("java.util.Collection");
 
         int listMapModifiers =arrayList.getModifiers();
         int abstractListModifiers = abstractList.getModifiers();
